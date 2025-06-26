@@ -32,9 +32,9 @@ export default function RootLayout({ children }) {
           </Link>
 
 
-          {/* <Link href="/Assignment-2">
+          <Link href="/Assignment-2">
             <button>Assignment-2</button>
-          </Link> */}
+          </Link>
         </div>
         {children}
       </body>
