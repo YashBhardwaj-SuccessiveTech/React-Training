@@ -3,7 +3,7 @@ import React from 'react'
 
 function page() {
 
-    const List = ["task1","task2","task3","task4"];
+    const list = ["task1","task2","task3","task4"];
 
   return (
     <div>
@@ -11,7 +11,7 @@ function page() {
              Use the map function to render each task name as a list item.
              Import and render the TaskList component in the App component with an array of tasks.</p>
              <br></br>
-        <TaskList List={List}/>
+        <TaskList list={list}/>
     </div>
   )
 }
