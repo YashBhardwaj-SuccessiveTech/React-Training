@@ -8,6 +8,10 @@ import { useState } from "react";
 export function Weather() {
   const [temp, setTemp] = useState("");
 
+  function changeHandler(event){
+    setTemp(event.target.value);
+  }
+
   return (
     <>
     <br></br>
@@ -15,7 +19,7 @@ export function Weather() {
         type="number"
         placeholder="enter temperature"
         value={temp}
-        onChange={(event) => setTemp(event.target.value)}
+        onChange={changeHandler}
       />
 
       {temp !== "" && (

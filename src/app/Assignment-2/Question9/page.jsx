@@ -3,19 +3,24 @@
 // Provide a button to toggle between the two themes.
 // Use the useContext hook to access the theme value and update it.
 // Apply different styles and colors to components based on the selected theme.
+"use client"
 
-'use client'
-import ThemeButton from "@/Components/Assignment2Components/ThemeButton";
-import { ThemeContext } from "@/context/Theme";
-import React, { useContext } from "react";
+import ThemeSwitcher from '@/Components/Assignment2Components/ThemeSwitcher';
+import React, { createContext, useState } from 'react'
 
-function page() {
-  const {theme, toggleTheme} = useContext(ThemeContext)
+const ThemeContext = createContext();
+
+export default function App() {
+    const [ theme, setTheme ] = useState("light");
+
   return (
-    <div>
-      <ThemeButton theme={theme} onClick={toggleTheme}/>
-    </div>
-  );
+    <ThemeContext.Provider value={{theme, setTheme}}>
+        <div style={{backgroundColor:theme==="light"? "white":"black", padding:"200px", flex:"centre", alignItems:"centre"}}>
+            <ThemeSwitcher/>
+        </div>
+    </ThemeContext.Provider>
+  )
 }
 
-export default page;
+export {ThemeContext};
+

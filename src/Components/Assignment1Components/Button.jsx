@@ -5,8 +5,8 @@
 import React from "react";
 
 export default function Button(props) {
-  let color = props.color;
-  let text = props.text;
+  const color = props.color;
+  const text = props.text;
   return (
     <div>
       <button style={{ backgroundColor: color }}> {text} </button>

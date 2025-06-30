@@ -4,13 +4,13 @@
 
 import React from "react";
 
-export default function TaskList({ List }) {
+export default function TaskList({ list }) {
   return (
     <div>
       <h2>My Tasks are:</h2>
       <ul>
-        {List.map((task, index) => (
-          <li key={index}>{task}</li> // ✅ implicit return
+        {list.map((task, index) => (
+          <li key={index}>{task}</li> 
         ))}
       </ul>
     </div>

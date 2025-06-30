@@ -2,8 +2,8 @@ import Button from '@/Components/Assignment1Components/Button'
 import React from 'react'
 
 function page() {
-    let text="I am a Button";
-    let color="Blue";
+    const text="I am a Button";
+    const color="lightgreen";
   return (
     <div>
         <p>Create a functional component named Button that accepts props for text and color.

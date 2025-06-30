@@ -12,7 +12,11 @@ import React, { useState } from 'react'
 function CounterWithStep() {
 
     const [count, setcount] = useState(0);
-    const [steps, setsteps] = useState(1);
+    const [steps, setSteps] = useState(1);
+
+    function updateSteps(e){
+      setSteps(Number(e.target.value))
+    }
 
     function Incrementhandler(){
         setcount(count+steps)
@@ -34,7 +38,7 @@ function CounterWithStep() {
         <input
         type="number"
         placeholder='enter steps value'
-        onChange={(e)=>setsteps(Number(e.target.value))}
+        onChange={updateSteps}
         >
         </input>
     </div>
