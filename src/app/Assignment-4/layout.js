@@ -23,6 +23,31 @@ export default function Assignment4Layout({children}) {
         <Link href="/Assignment-4/Question6">
           <button>Question-6</button>
         </Link>
+        <Link href="/Assignment-4/Question7">
+          <button>Question-7</button>
+        </Link>
+        <Link href="/Assignment-4/Question8">
+          <button>Question-8</button>
+        </Link>
+        <Link href="/Assignment-4/Question9">
+          <button>Question-9</button>
+        </Link>
+        <Link href="/Assignment-4/Question10">
+          <button>Question-10</button>
+        </Link>
+        <Link href="/Assignment-4/Question11">
+          <button>Question-11</button>
+        </Link>
+        <Link href="/Assignment-4/Question12">
+          <button>Question-12</button>
+        </Link>
+        <Link href="/Assignment-4/Question13">
+          <button>Question-13</button>
+        </Link>
+        <Link href="/Assignment-4/Question14">
+          <button>Question-14</button>
+        </Link>
+        
       </nav>
 
       <main>{children}</main>

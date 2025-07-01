@@ -109,7 +109,7 @@ a {
 }
 
 .globallayout button:hover {
-  background-color: blue; /* Changes background color when hovered */
+  background-color: blue; 
 }
 
 
@@ -125,16 +125,9 @@ a {
 }
 
 .ass-2layout button:hover {
-  background-color: blue; /* Changes background color when hovered */
+  background-color: blue; 
 }
 
-/* .ass-2layout{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 50px;
-  margin: 50px 50px;
-} */
 
 .ass-2layout {
   display: flex;
@@ -170,18 +163,18 @@ a {
 }
 
 .ass-3layout button{
-  border-radius: 15px;  /* Makes the button corners rounded */
-  padding: 10px 20px;   /* Adds some padding for better button size */
-  background-color: yellowgreen; /* You can customize the background color */
-  color: white;  /* Text color */
-  border: none;  /* Removes default border */
-  font-size: 16px; /* Adjust font size */
+  border-radius: 15px;  
+  padding: 10px 20px;   
+  background-color: yellowgreen; 
+  color: white; 
+  border: none;  
+  font-size: 16px;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
 .ass-3layout button:hover {
-  background-color: blue; /* Changes background color when hovered */
+  background-color: blue; 
 }
 
 .uparniche{
@@ -200,16 +193,16 @@ a {
 }
 
 .ass-4layout button{
-  border-radius: 15px;  /* Makes the button corners rounded */
-  padding: 10px 20px;   /* Adds some padding for better button size */
-  background-color: yellowgreen; /* You can customize the background color */
-  color: white;  /* Text color */
-  border: none;  /* Removes default border */
-  font-size: 16px; /* Adjust font size */
+  border-radius: 15px;  
+  padding: 10px 20px;   
+  background-color: yellowgreen; 
+  color: white;  
+  border: none;  
+  font-size: 16px; 
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
 .ass-4layout button:hover {
-  background-color: blue; /* Changes background color when hovered */
+  background-color: blue; 
 }
