@@ -190,3 +190,26 @@ a {
   justify-content: center;
   flex-direction: column;
 }
+
+.ass-4layout{
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 10px;        
+  padding: 1rem;
+  justify-content: center;
+}
+
+.ass-4layout button{
+  border-radius: 15px;  /* Makes the button corners rounded */
+  padding: 10px 20px;   /* Adds some padding for better button size */
+  background-color: yellowgreen; /* You can customize the background color */
+  color: white;  /* Text color */
+  border: none;  /* Removes default border */
+  font-size: 16px; /* Adjust font size */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.ass-4layout button:hover {
+  background-color: blue; /* Changes background color when hovered */
+}

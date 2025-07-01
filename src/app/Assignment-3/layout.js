@@ -4,8 +4,9 @@ import Link from "next/link";
 const Assignment3Layout = ({ children }) => {
 
   return (
-    <div className="ass-3layout">
-        <Link href="/Assignment-3/Question1">
+    <div>
+        <nav className="ass-3layout">
+          <Link href="/Assignment-3/Question1">
           <button>Question-1</button>
         </Link>
 
@@ -28,6 +29,7 @@ const Assignment3Layout = ({ children }) => {
         <Link href="/Assignment-3/Question6">
           <button>Question-6</button>
         </Link>
+        </nav>
    
       {/* Render the nested pageimport { useRouter } from "next/navigation"; */}
 

@@ -1,0 +1,31 @@
+import "../globals.css";
+import Link from "next/link";
+
+export default function Assignment4Layout({children}) {
+  return (
+    <div >
+      <nav className="ass-4layout">
+        <Link href="/Assignment-4/Question1">
+          <button>Question-1</button>
+        </Link>
+        <Link href="/Assignment-4/Question2">
+          <button>Question-2</button>
+        </Link>
+        <Link href="/Assignment-4/Question3">
+          <button>Question-3</button>
+        </Link>
+        <Link href="/Assignment-4/Question4">
+          <button>Question-4</button>
+        </Link>
+        <Link href="/Assignment-4/Question5">
+          <button>Question-5</button>
+        </Link>
+        <Link href="/Assignment-4/Question6">
+          <button>Question-6</button>
+        </Link>
+      </nav>
+
+      <main>{children}</main>
+    </div>
+  );
+}
