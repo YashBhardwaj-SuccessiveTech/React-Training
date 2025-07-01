@@ -4,3 +4,16 @@
 // Add navigation links to switch between the sub-pages within the Dashboard section.
 // Customize the content displayed on each sub-page.
 
+import React from 'react'
+import Dashboard from './Dashboard/page'
+
+function page() {
+  return (
+    <div>
+      <h1>Welcome to the DashBoard Page!</h1>
+        <Dashboard/>
+    </div>
+  )
+}
+
+export default page
