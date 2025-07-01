@@ -25,6 +25,10 @@ export default function RootLayout({ children }) {
           <Link href="/Assignment-2">
             <button>Assignment-2</button>
           </Link>
+
+          <Link href="/Assignment-3">
+            <button>Assignment-3</button>
+          </Link>
         </div>
         {children}
       </body>
