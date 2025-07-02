@@ -11,16 +11,16 @@ import { useEffect, useState } from 'react';
 export default function SlideshowPage() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isPlaying, setIsPlaying] = useState(true);
-  const [intervalTime, setIntervalTime] = useState(2000); // 3 seconds
+  const [intervalTime, setIntervalTime] = useState(2000);
 
-  // Longer version of the image array creation
+  
   const images = [];
   for (let i = 1; i <= 10; i++) {
     const imagePath = `/slides/img${i}.jpg`;
     images.push(imagePath);
   }
 
-  // Slideshow logic
+  
   useEffect(() => {
     if (!isPlaying) return;
 

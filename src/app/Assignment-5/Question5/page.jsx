@@ -1,4 +1,6 @@
-// 5. Create a Next.js component that fetches data from a public API (like JSONPlaceholder) using Axios and displays the results on the page. Use the App Router conventions and perform the data fetching on the server side.
+// 5. Create a Next.js component that fetches data from a public API (like JSONPlaceholder) 
+// using Axios and displays the results on the page. Use the App Router conventions and perform 
+// the data fetching on the server side.
 
 "use client"
 
@@ -11,7 +13,7 @@ export default function FetchDataWithAxios() {
 
 
   useEffect(()=>{axios
-    .get("https://jsonplaceholder.typicode.com/users")
+    .get("https://jsonplaceholder.typicode.com/users") 
     .then((res) => setUser(res.data))
     .catch(() => {
       setError("Can't Fetch Data");

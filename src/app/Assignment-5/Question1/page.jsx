@@ -7,6 +7,7 @@ import React from 'react'
 function page() {
   return (
     <div>
+      <p>Create a Next.js component using the App Router that fetches data on the server side (SSR) from a public API (e.g., JSONPlaceholder) and displays the results on the page.</p>
         <FetchData/>
     </div>
   )

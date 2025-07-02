@@ -1,17 +1,19 @@
+// Components/Assignment5Components/FetchDataWithSpinner.jsx
 "use client";
-import { useState } from "react";
 
-export default function Spinner({ users = [], error = false }) {
-  const [userData, setUserData] = useState(users);
-  const [hasError, setHasError] = useState(error);
-  const [loading, setLoading] = useState(false);
+import { useEffect, useState } from "react";
 
-  const retryFetch = async () => {
+export default function Spinner() {
+  const [userData, setUserData] = useState([]);
+  const [hasError, setHasError] = useState(false);
+  const [loading, setLoading] = useState(true);
+
+  const fetchUsers = async () => {
     setLoading(true);
     setHasError(false);
     try {
       const res = await fetch("https://jsonplaceholder.typicode.com/users");
-      if (!res.ok) throw new Error("Failed again");
+      if (!res.ok) throw new Error("Fetch failed");
       const data = await res.json();
       setUserData(data);
     } catch (err) {
@@ -21,21 +23,28 @@ export default function Spinner({ users = [], error = false }) {
     }
   };
 
+  useEffect(() => {
+    fetchUsers(); // fetch on component mount
+  }, []);
+
   return (
     <main style={{ padding: 30 }}>
-      <h1> Users</h1>
+      <h1>Users</h1>
 
-       {loading && (
+      {loading && (
         <div style={{ margin: "20px 0" }}>
           <span style={{ fontSize: 20 }}>⏳ Loading...</span>
         </div>
       )}
-      {hasError ? (
+
+      {!loading && hasError && (
         <>
-          <p style={{ color: "red" }}> Error fetching users. Please try again.</p>
-          <button onClick={retryFetch}>Retry</button>
+          <p style={{ color: "red" }}>Error fetching users. Please try again.</p>
+          <button onClick={fetchUsers}>Retry</button>
         </>
-      ) : (
+      )}
+
+      {!loading && !hasError && (
         <ul>
           {userData.map((user) => (
             <li key={user.id} style={{ marginBottom: 10 }}>

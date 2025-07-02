@@ -5,6 +5,7 @@ export default function Assignment5Layout({children}) {
   return (
     <div >
       <nav className="ass-4layout">
+        
         <Link href="/Assignment-5/Question1">
           <button>Question-1</button>
         </Link>
@@ -26,18 +27,6 @@ export default function Assignment5Layout({children}) {
         <Link href="/Assignment-5/Question7">
           <button>Question-7</button>
         </Link>
-        <Link href="/Assignment-5/Question8">
-          <button>Question-8</button>
-        </Link>
-        <Link href="/Assignment-5/Question9">
-          <button>Question-9</button>
-        </Link>
-        <Link href="/Assignment-5/Question10">
-          <button>Question-10</button>
-        </Link>
-        <Link href="/Assignment-5/Question11">
-          <button>Question-11</button>
-        </Link>
         <Link href="/Assignment-5/Question12">
           <button>Question-12</button>
         </Link>
@@ -46,6 +35,12 @@ export default function Assignment5Layout({children}) {
         </Link>
         <Link href="/Assignment-5/Question14">
           <button>Question-14</button>
+        </Link>
+        <Link href="/Assignment-5/Question15">
+          <button>Question-15</button>
+        </Link>
+        <Link href="/Assignment-5/Question16">
+          <button>Question-16</button>
         </Link>
         
       </nav>
