@@ -1,13 +1,17 @@
-const WithAuth = (Component) => {
-  const isAuthenticate = true;
+// "use client";
 
-  return function (props) {
-    if (isAuthenticate) {
-     return <Component {...props} />;
-    } else {
-       return (<p>Please Login</p>);
-    }
-  };
-};
+// import { Authcontext, AuthProvider } from "@/context/Authcontext";
+// import { redirect } from "next/navigation";
 
-export default WithAuth
+// const withAuth = (WrappedComponent) => (props) => {
+//   const {loggedIn}=AuthProvider();
+  
+
+//   if (!loggedIn) {
+//     redirect("/login");
+//   }
+
+//   return <WrappedComponent {...props} />;
+// };
+
+// export default withAuth;
