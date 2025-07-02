@@ -11,6 +11,7 @@ export default function Counter() {
 
   const Increment = () => {
     setCounter(counter + 1);
+    console.log(counter);
   };
 
   const Decrement = () => {
