@@ -81,6 +81,7 @@ export default function RootLayout({ children }) {
     { name: "Assignment-3", href: "/Assignment-3" },
     { name: "Assignment-4", href: "/Assignment-4" },
     { name: "Assignment-5", href: "/Assignment-5" },
+    { name: "Assignment-6", href: "/Assignment-6" },
   ];
 
   return (
