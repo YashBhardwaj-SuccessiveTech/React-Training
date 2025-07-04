@@ -109,5 +109,100 @@ a {
 }
 
 .globallayout button:hover {
-  background-color: blue; /* Changes background color when hovered */
+  background-color: blue; 
+}
+
+
+.ass-2layout button{
+  border-radius: 15px;  /* Makes the button corners rounded */
+  padding: 10px 20px;   /* Adds some padding for better button size */
+  background-color: yellowgreen; /* You can customize the background color */
+  color: white;  /* Text color */
+  border: none;  /* Removes default border */
+  font-size: 16px; /* Adjust font size */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.ass-2layout button:hover {
+  background-color: blue; 
+}
+
+
+.ass-2layout {
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 10px;        
+  padding: 1rem;
+  justify-content: center;
+}
+
+.parent{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.child{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+
+.ass-3layout {
+  display: flex;
+  /* flex-direction: column; */
+  flex-wrap: wrap; 
+  gap: 50px;       
+  padding: 1rem;
+  justify-content: center;
+  margin: 50px 50px;
+}
+
+.ass-3layout button{
+  border-radius: 15px;  
+  padding: 10px 20px;   
+  background-color: yellowgreen; 
+  color: white; 
+  border: none;  
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.ass-3layout button:hover {
+  background-color: blue; 
+}
+
+.uparniche{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.ass-4layout{
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 10px;        
+  padding: 1rem;
+  justify-content: center;
+}
+
+.ass-4layout button{
+  border-radius: 15px;  
+  padding: 10px 20px;   
+  background-color: yellowgreen; 
+  color: white;  
+  border: none;  
+  font-size: 16px; 
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.ass-4layout button:hover {
+  background-color: blue; 
 }
