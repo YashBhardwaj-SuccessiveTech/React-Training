@@ -1,4 +1,5 @@
 "use client";
+import { Authcontext, AuthProvider } from "@/context/Authcontext";
 import Link from "next/link";
 
 const Assignment3Layout = ({ children }) => {
@@ -35,7 +36,9 @@ const Assignment3Layout = ({ children }) => {
 
       {/* <div style={{display:"flex", alignItems:"center", justifyContent:"center", flexDirection:"column"}}>{children}</div> */}
       <div  className="uparniche">
+        <AuthProvider>
           {children}
+        </AuthProvider>
       </div>
       {/* {children} */}
     </div>

@@ -6,10 +6,12 @@
 // Display a message on the Home page welcoming the authenticated user.
 
 "use client";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { useRouter } from "next/navigation";
+import { Authcontext } from "@/context/Authcontext";
 
 export default function LoginPage() {
+    const {isloggedIn, setIsloggedIn}=useContext(Authcontext);
   const router = useRouter();
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
@@ -19,6 +21,7 @@ export default function LoginPage() {
     e.preventDefault();
     if (username === "Yash" && password === "1234") {
       localStorage.setItem("user", JSON.stringify({ username }));
+      setIsloggedIn(true);
       router.push("/Assignment-3/Question3/Home");
       
     } else {

@@ -6,10 +6,11 @@
 // Display a message on the Home page welcoming the authenticated user.
 
 "use client"
+import { Authcontext, AuthProvider } from '@/context/Authcontext';
 import Link from 'next/link'
 import { useRouter } from 'next/navigation';
 
-import React from 'react'
+import React, { useContext } from 'react'
 
 function page() {
   const router = useRouter();
