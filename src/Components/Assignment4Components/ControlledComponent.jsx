@@ -1,40 +1,44 @@
-// 3.Create a component with controlled input field and a button. When the user enters a specific value into the input (e.g., "show"), 
-// a new component should be rendered below the input, displaying a message. Otherwise, nothing should be displayed.
-"use client"
+"use client";
 
-import React, { useState } from 'react'
-import ShowMessage from './ShowMessage';
+import React, { useState } from "react";
+import ShowMessage from "./ShowMessage";
 
 function ControlledComponent() {
+  const [input, setInput] = useState("");
+  const [showMessage, setShowMessage] = useState(false);
+  const [error, setError] = useState("");
 
-    const [input, setInput]= useState("");
-    const [showMessage,SetshowMesage] = useState(false);
+  function changeHandler(e) {
+    setInput(e.target.value);
+    setError(""); // clear error when typing
+    setShowMessage(false); // hide message when input changes
+  }
 
-
-    function changeHandler(e){
-        setInput(e.target.value);
+  function verifyHandler() {
+    if (input === "show") {
+      setShowMessage(true);
+      setError("");
+    } else {
+      setShowMessage(false);
+      setError("Entered text is not valid");
+      setInput(""); // clear input
     }
-
-    function verifyHandler(){
-        if(input=="show"){
-            SetshowMesage(true);
-        }
-    }
+  }
 
   return (
     <div>
-        <input
-        type='text'
+      <input
+        type="text"
         value={input}
         onChange={changeHandler}
         placeholder="Enter show to display a message"
-        />
+      />
+      <button onClick={verifyHandler}>Check</button>
 
-        <button onClick={verifyHandler} >Check</button>
-
-        {showMessage && <ShowMessage/>}
+      {error && <p style={{ color: "red" }}>{error}</p>}
+      {showMessage && <ShowMessage />}
     </div>
-  )
+  );
 }
 
-export default ControlledComponent
+export default ControlledComponent;
